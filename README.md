@@ -5,8 +5,8 @@
 - Jeisson Sanchez
 - Mateo Gonzalez
 
-###Contenido
+### Contenido
 
-- [BBP Formula](/BBP formula)
+[BBP Formula](/BBP formula)
 
 
