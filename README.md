@@ -7,6 +7,6 @@
 
 ### Contenido
 
-> [BBP Formula](tree/master/BBP%20formula)
+> [BBP Formula](BBP%20formula)
 
 
