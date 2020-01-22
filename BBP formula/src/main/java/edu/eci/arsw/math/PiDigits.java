@@ -130,7 +130,10 @@ public class PiDigits {
     	Scanner scan = new Scanner(System.in);
     	for(int i=0;i<20;i++) {
     		System.out.println("Threads: ");
-    		int threads = scan.nextInt();
+    		//int threads = scan.nextInt();
+    		//int threads = Runtime.getRuntime().availableProcessors();
+    		int threads = 2*Runtime.getRuntime().availableProcessors();
+    		System.out.println(threads);
     		System.out.println("start: ");
     		int start = scan.nextInt();
     		System.out.println("Longitud: ");
