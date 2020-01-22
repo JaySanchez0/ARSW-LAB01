@@ -7,6 +7,6 @@
 
 ### Contenido
 
-[BBP Formula](/BBP formula)
+> [BBP Formula](/BBP formula)
 
 
