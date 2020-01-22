@@ -22,7 +22,6 @@ public class PiDigits {
     		ThreadBBP t = new ThreadBBP(start+i*num,num);
     		threadsb.add(t);
     		t.start();
-			t.join();
     	}
     	ThreadBBP t = new ThreadBBP(start+(threads-1)*num,num+(count%threads));
     	threadsb.add(t);
@@ -31,6 +30,7 @@ public class PiDigits {
     	byte[] resp = new byte[count];
     	int j=0;
     	for(ThreadBBP rt:threadsb) {
+    		rt.join();
     		byte[] ar = rt.getResp();
     		for(byte n:ar) {
     			resp[j]=n;
