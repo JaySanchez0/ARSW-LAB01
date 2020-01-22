@@ -30,30 +30,30 @@
 
  ** Threads **
  
- ![img](img/hilos1.png)
+ ![img](img/hilos1.PNG)
  
  
  ** Monitor de recursos **
  
  
- ![img](img/recursos1.png)
+ ![img](img/recursos1.PNG)
  
 - Tantos hilos como cores tenga el equipo
  
  ** Threads **
  
- ![img](img/threads_cores.png)
+ ![img](img/threads_cores.PNG)
  
  ** Monitor de recursos **
  
- ![img](img/recursos_cores.png)
+ ![img](img/recursos_cores.PNG)
  
  - Que tenga tantos Threads como el doble de cores
  
  ** Threads **
  
- ![img](img/double_threads.png)
+ ![img](img/double_threads.PNG)
  
  ** Monitor de recursos **
  
-  ![img](img/double_recursos.png)
+  ![img](img/double_recursos.PNG)
