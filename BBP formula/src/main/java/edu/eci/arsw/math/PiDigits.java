@@ -1,6 +1,7 @@
 package edu.eci.arsw.math;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import edu.eci.arsw.threads.ThreadBBP;
 
@@ -14,7 +15,6 @@ public class PiDigits {
 
     private static int DigitsPerSum = 8;
     private static double Epsilon = 1e-17;
-
     public static byte[] getDigits(int start,int count,int threads) throws InterruptedException {
     	int num = count/threads;
     	ArrayList<ThreadBBP> threadsb = new ArrayList<>();
@@ -126,15 +126,16 @@ public class PiDigits {
 
         return result;
     }
-    public static void main(String[] args) {
-    	try {
-			byte[] ar = PiDigits.getDigits(0, 300,1);
-			for(byte b:ar) {
-				System.out.println(b);
-			}
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+    public static void main(String[] args) throws InterruptedException {
+    	Scanner scan = new Scanner(System.in);
+    	for(int i=0;i<20;i++) {
+    		System.out.println("Threads: ");
+    		int threads = scan.nextInt();
+    		System.out.println("start: ");
+    		int start = scan.nextInt();
+    		System.out.println("Longitud: ");
+    		int longi = scan.nextInt();
+    		PiDigits.getDigits(start, longi,threads);
+    	}
     }
 }
