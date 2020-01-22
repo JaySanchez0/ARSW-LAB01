@@ -20,8 +20,4 @@ public class ThreadBBP extends Thread{
 		}
 		
 	}
-	public byte[] getResp() {
-		return resp;
-	}
-
 }
