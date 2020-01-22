@@ -5,14 +5,19 @@ public class ThreadBBP extends Thread{
 	private int start;
 	private int count;
 	private byte[] resp;
-	public ThreadBBP(int start,int count) {
+	private int first;
+	public ThreadBBP(int start,int count,byte[] resp,int first) {
 		this.start = start;
 		this.count = count;
-		resp = null;
+		this.resp = resp;;
+		this.first = first;
 	}
 	@Override
 	public void run() {
-		resp = PiDigits.getDigits(start, count);
+		byte[] resp = PiDigits.getDigits(start, count);
+		for(int i=0;i<resp.length;i++) {
+			this.resp[first+i]=resp[i];
+		}
 		
 	}
 	public byte[] getResp() {

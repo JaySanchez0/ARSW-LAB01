@@ -18,26 +18,15 @@ public class PiDigits {
     public static byte[] getDigits(int start,int count,int threads) throws InterruptedException {
     	int num = count/threads;
     	ArrayList<ThreadBBP> threadsb = new ArrayList<>();
-    	for(int i=0;i<threads-1;i++) {
-    		ThreadBBP t = new ThreadBBP(start+i*num,num);
+    	byte[] resp = new byte[count];
+    	for(int i=0;i<threads;i++) {
+    		ThreadBBP t = null;
+    		if(i!=threads-1) t = new ThreadBBP(start+i*num,num,resp,i*num);
+    		else t=  new ThreadBBP(start+(i)*num,num+(count%threads),resp,i*num);
     		threadsb.add(t);
     		t.start();
     	}
-    	ThreadBBP t = new ThreadBBP(start+(threads-1)*num,num+(count%threads));
-    	threadsb.add(t);
-		t.start();
-		t.join();
-    	byte[] resp = new byte[count];
-    	int j=0;
-    	for(ThreadBBP rt:threadsb) {
-    		rt.join();
-    		byte[] ar = rt.getResp();
-    		for(byte n:ar) {
-    			resp[j]=n;
-    			j++;
-    		}
-    	}
-    	//System.out.println(resp.toString());
+    	for(ThreadBBP t:threadsb) t.join();
     	return resp;
     }
     /**
