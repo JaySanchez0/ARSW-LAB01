@@ -13,7 +13,7 @@
  
  Podemos ver que el codigo se ejecuta secuencial
  
- ** Al ejecutar start **
+ **Al ejecutar start**
  
  ![start](img/start.jpg)
  
@@ -28,39 +28,39 @@
 
 - Un solo Thread
 
- ** Threads **
+ **Threads**
  
  ![img](img/hilos1.PNG)
  
  
- ** Monitor de recursos **
+ **Monitor de recursos**
  
  
  ![img](img/recursos1.PNG)
  
 - Tantos hilos como cores tenga el equipo
  
- ** Threads **
+ **Threads**
  
  ![img](img/threads_cores.PNG)
  
- ** Monitor de recursos **
+ **Monitor de recursos**
  
  ![img](img/recursos_cores.PNG)
  
  - Que tenga tantos Threads como el doble de cores
  
- ** Threads **
+ **Threads**
  
  ![img](img/double_threads.PNG)
  
- ** Monitor de recursos **
+ **Monitor de recursos**
  
   ![img](img/double_recursos.PNG)
   
   - Que tenga 200 threads
   
-  ** Threads **
+  **Threads**
   
   ![img](img/200threads.PNG)
   
@@ -70,7 +70,7 @@
   
   - Que tenga 500 threads
   
- ** Threads **
+ **Threads**
  
  ![img](img/500Threads.PNG)
  
