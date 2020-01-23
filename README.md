@@ -5,7 +5,7 @@
 - Jeisson Sanchez
 - Mateo Gonzalez
 
-### Contenido
+### Contenido y solucion:
 
 > [BBP Formula](BBP%20formula)
 
