@@ -64,7 +64,7 @@
   
   ![img](img/200threads.PNG)
   
-  ** Monitor de recursos **
+  **Monitor de recursos**
   
   ![img](img/200threadsProcesos.PNG)
   
