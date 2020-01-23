@@ -19,7 +19,7 @@
  
  Podemos evidenciar que el codigo se ejecuta en paralelo
 
-#### Parte 2: BBP formula ejercicio
+#### Parte 2: BBP formula ejercicio 
  
  
 #### Parte 3: Evaluacion de rendimiento
@@ -57,3 +57,23 @@
  ** Monitor de recursos **
  
   ![img](img/double_recursos.PNG)
+  
+  - Que tenga 200 threads
+  
+  ** Threads **
+  
+  ![img](img/200threads.PNG)
+  
+  ** Monitor de recursos **
+  
+  ![img](img/200threadsProcesos.PNG)
+  
+  - Que tenga 500 threads
+  
+ ** Threads **
+ 
+ ![img](img/500Threads.PNG)
+ 
+ **  Monitor de recursos **
+ 
+ ![img](img/500Monitor.PNG)
