@@ -7,7 +7,7 @@
 #### Parte 1: Introduccion a los Threads
 - Cambie start() por run? cambia la salida? por que?
  
- ** Al ejecutar run **
+ **Al ejecutar run**
  
  ![run](img/run.jpg)
  
@@ -74,6 +74,6 @@
  
  ![img](img/500Threads.PNG)
  
- **  Monitor de recursos **
+ **Monitor de recursos**
  
  ![img](img/500Monitor.PNG)
