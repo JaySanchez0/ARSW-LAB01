@@ -26,8 +26,12 @@ public class Galgo extends Thread {
 			
 			if (paso == carril.size()) {						
 				carril.finish();
-				int ubicacion=regl.getUltimaPosicionAlcanzada();
-				regl.setUltimaPosicionAlcanzada(ubicacion+1);
+				int ubicacion=-1;
+				//Region critica
+				synchronized(regl){
+					ubicacion=regl.getUltimaPosicionAlcanzada();
+					regl.setUltimaPosicionAlcanzada(ubicacion+1);
+				}
 				System.out.println("El galgo "+this.getName()+" llego en la posicion "+ubicacion);
 				if (ubicacion==1){
 					regl.setGanador(this.getName());
@@ -47,6 +51,19 @@ public class Galgo extends Thread {
 			e.printStackTrace();
 		}
 
+	}
+
+	public void pause() {
+		synchronized(this) {
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		System.out.println("salio");
+		
 	}
 
 }
