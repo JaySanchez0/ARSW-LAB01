@@ -89,3 +89,8 @@ mvn exec:java -Dexec.mainClass="edu.eci.arsw.math.Main"
  **Monitor de recursos**
  
  ![img](img/500Monitor.PNG)
+ 
+ - **Preguntas:**
+  1. a
+  2. b
+  3. c
