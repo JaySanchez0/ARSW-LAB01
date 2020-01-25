@@ -1,6 +1,11 @@
 ## Laboratorio
 
-Ejecutar
+**Ejecutar**
 ~~~
 mvn exec:java -Dexec.mainClass="edu.eci.arsw.primefinder.Main"
+~~~
+
+**Compilar:**
+~~~
+mvn -U package
 ~~~
