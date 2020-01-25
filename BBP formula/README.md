@@ -2,7 +2,13 @@
 
 > [Ver](https://eci.gitbook.io/workshops/parallelism-and-concurrency/bbp-formula)
 
-Ejecutar: 
+**Compilar**
+
+~~~
+mvn -U package
+~~~
+
+**Ejecutar:**
 
 ~~~
 mvn exec:java -Dexec.mainClass="edu.eci.arsw.math.Main"
