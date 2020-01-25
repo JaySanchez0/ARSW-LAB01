@@ -2,6 +2,12 @@
 
 > [Ver](https://eci.gitbook.io/workshops/parallelism-and-concurrency/bbp-formula)
 
+Ejecutar: 
+
+~~~
+mvn exec:java -Dexec.mainClass="edu.eci.arsw.math.Main"
+~~~
+
 ## Solucion:
 
 #### Parte 1: Introduccion a los Threads
