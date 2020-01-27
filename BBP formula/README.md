@@ -91,6 +91,8 @@ mvn exec:java -Dexec.mainClass="edu.eci.arsw.math.Main"
  ![img](img/500Monitor.PNG)
  
  - **Preguntas:**
-  1. De acuerdo con la ley de Amdahls, donde S (n) es la mejora teórica del rendimiento, P es la fracción paralela del algoritmo yn el número de hilos, cuanto mayor sea n, mayor será la mejora. ¿Por qué no se logra el mejor rendimiento con los 500 hilos? ¿Cómo se compara este rendimiento cuando se usan 200?
+  1. De acuerdo con la ley de Amdahls, donde S (n) es la mejora teórica del rendimiento, P es la fracción paralela del algoritmo y n el número de hilos, cuanto mayor sea n, mayor será la mejora. ¿Por qué no se logra el mejor rendimiento con los 500 hilos? ¿Cómo se compara este rendimiento cuando se usan 200?
+  ` Si bien la ley de Ahmdal muestra una sustancial mejora en el desempeño y velocidad del programa a medida que aumentamos la cantidad de Threads utilizados (n), hay un momento en el cual el algoritmo es el que decide la mejora en  velocidad no el numero de procesadores, es por esto que podemos observar un comportamiento casi identico entre usar 200 Threads y 500 Threads `
   2. ¿Cómo se comporta la solución usando tantos subprocesos de procesamiento como núcleos en comparación con el resultado de usar el doble?
+  `La velocidad al utilizar el doble de nucleos se reduce en 3 segundos, la memoria Cpu tuvo un incremento de un 88% a a un 94%,mientras que la memora usada no tuco un mayor incremento`
   3. De acuerdo con lo anterior, si para este problema en lugar de 500 hilos en una sola CPU, se pudiera usar 1 cable en cada una de las 500 máquinas hipotéticas, ¿se aplicaría mejor la ley de Amdahls? Si, en cambio, se usaran hilos c en máquinas distribuidas 500 / c (donde c es el número de núcleos de dichas máquinas), ¿se mejoraría? Explica tu respuesta.
