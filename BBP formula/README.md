@@ -97,7 +97,7 @@ mvn exec:java -Dexec.mainClass="edu.eci.arsw.math.Main"
   
   2. ¿Cómo se comporta la solución usando tantos subprocesos de procesamiento como núcleos en comparación con el resultado de usar el doble?
   
-  ```La velocidad al utilizar el doble de nucleos (16) se reduce en 3 segundos, la memoria Cpu tuvo un incremento de un 88% a a un 94%,mientras que la memora usada no tuco un mayor incremento```
+  ```La velocidad al utilizar el doble de nucleos (16) se reduce en 3 segundos, la memoria Cpu tuvo un incremento de un 88% a a un 94%,mientras que la memora usada no tuvo un mayor incremento```
   
   3. De acuerdo con lo anterior, si para este problema en lugar de 500 hilos en una sola CPU, se pudiera usar 1 cable en cada una de las 500 máquinas hipotéticas, ¿se aplicaría mejor la ley de Amdahls? Si, en cambio, se usaran c hilos en  500 / c  máquinas distribuidas  (donde c es el número de núcleos de dichas máquinas), ¿se mejoraría? Explica tu respuesta.
   
